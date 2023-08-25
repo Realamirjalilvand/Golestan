@@ -1,0 +1,755 @@
+@font-face {
+  font-family: iransans;
+  src: url(../media/Font/IRANSans_Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: iransans;
+}
+
+div.header {
+  width: 100%;
+  height: 100px;
+  background-color: #262626;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+div.header > ul.menu > li > a {
+  text-decoration: none;
+  color: #abb2b4;
+  line-height: 120px;
+  border-left: 1px solid #abb2b42d;
+  padding-left: 15px;
+  transition: all 200ms linear;
+}
+
+div.header > ul.menu > li {
+  list-style: none;
+  padding: 0 10px;
+}
+
+div.header > ul.menu {
+  display: flex;
+  width: 50%;
+  margin: 0 450px 0 200px;
+}
+
+div.header > ul.menu > li.language > a.language {
+  border-left: unset;
+}
+
+div.header > ul.menu > li > a:hover {
+  color: #ffffff;
+}
+
+img.logo {
+  position: absolute;
+  top: 50px;
+  left: 1200px;
+  z-index: 999;
+}
+
+div.father {
+  background-image: linear-gradient(#f4f4f4, #d2d2d2);
+}
+div.second-part {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.second-part > div.text {
+  width: 450px;
+}
+div.second-part > div.text > h1 {
+  color: #ff0000;
+  font-weight: 500;
+}
+
+div.second-part > div.text > h3 {
+  color: #58595b;
+  font-weight: 400;
+}
+
+div.second-part > div.text > p {
+  margin-top: 30px;
+  color: #898989;
+}
+
+div.button {
+  margin-top: 32px;
+}
+div.second-part > div.text > div.button > a {
+  text-decoration: none;
+  background-color: white;
+  color: #7c7d7e;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid #c8c8c8;
+  transition: all 200ms linear;
+}
+
+div.second-part > div.text > div.button > a:hover {
+  background-color: #ed1c24;
+  color: #fff;
+}
+div.third-part {
+  padding-bottom: 100px;
+}
+
+div.third-part > div.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #bababa;
+  margin-top: 30px;
+}
+
+div.third-part > div.text {
+  width: 41%;
+  margin: 0 auto;
+}
+
+div.third-part > div.text > h3 {
+  color: #ff0000;
+  font-weight: 600;
+  margin-top: 32px;
+}
+div.third-part > div.text > p {
+  text-align: justify;
+  margin-top: 20px;
+  color: #818588;
+  line-height: 32px;
+}
+
+div.third-part > div.text > h3.second {
+  margin-top: 96px;
+}
+
+div.pics {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  justify-content: center;
+  padding-top: 130px;
+  gap: 16px;
+}
+div.pics > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #bababa;
+  padding-bottom: 8px;
+}
+
+div.img {
+  background: url(../media/image2-new.jpg) center center no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+div.img > div.red {
+  width: 300px;
+  height: 100px;
+  background-color: #ed1c24;
+  position: absolute;
+  bottom: 0;
+  right: 504px;
+  z-index: 3;
+  padding: 10px;
+}
+
+div.img > div.divider3 {
+  width: 100%;
+  height: 20px;
+  background-color: #e9d69f;
+  position: absolute;
+  bottom: 0;
+}
+
+div.img > div.red h1,
+h3 {
+  color: #fff;
+}
+
+div.img > div.red h1 {
+  font-weight: 500;
+}
+
+div.img > div.red h3 {
+  font-weight: 300;
+}
+
+div.divider3 {
+  width: 100%;
+  height: 1px;
+  background-color: #bababa;
+  margin-top: 30px;
+}
+
+div.fifth-part {
+  width: 41%;
+  margin: 0 auto;
+}
+
+div.fifth-part > h3 {
+  color: #ed1c24;
+  margin-top: 32px;
+}
+
+div.fifth-part > p {
+  text-align: justify;
+  margin-top: 20px;
+  color: #818588;
+  line-height: 32px;
+}
+
+div.buttons {
+  display: flex;
+  gap: 8px;
+}
+div.fifth-part > div.buttons > div.button > a {
+  text-decoration: none;
+  background-color: white;
+  color: #7c7d7e;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid #c8c8c8;
+  transition: all 200ms linear;
+}
+div.fifth-part > div.buttons > div.button > a:hover {
+  background-color: #ed1c24;
+  color: #fff;
+}
+
+div.img2 {
+  background: url(../media/image3-new.jpg) center center no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  margin-top: 120px;
+}
+div.img2 > div.red {
+  width: 300px;
+  height: 100px;
+  background-color: #ed1c24;
+  position: absolute;
+  bottom: 0;
+  right: 504px;
+  z-index: 3;
+  padding: 10px;
+}
+div.img2 > div.divider3 {
+  width: 100%;
+  height: 20px;
+  background-color: #e9d69f;
+  position: absolute;
+  bottom: 0;
+}
+
+div.img2 > div.red h1,
+h3 {
+  color: #fff;
+}
+
+div.img2 > div.red h1 {
+  font-weight: 500;
+}
+
+div.img2 > div.red h3 {
+  font-weight: 300;
+}
+
+div.sixth-part {
+  width: 41%;
+  margin: 0 auto;
+}
+
+div.sixth-part > h3 {
+  color: #ed1c24;
+  margin-top: 32px;
+}
+
+div.sixth-part > p {
+  text-align: justify;
+  margin-top: 20px;
+  color: #818588;
+  line-height: 32px;
+}
+div.sixth-part > div.buttons > div.button > a {
+  text-decoration: none;
+  background-color: white;
+  color: #7c7d7e;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid #c8c8c8;
+  transition: all 200ms linear;
+}
+div.sixth-part > div.buttons > div.button > a:hover {
+  background-color: #ed1c24;
+  color: #fff;
+}
+
+div.img3 {
+  background: url(../media/image4-new.jpg) center center no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+  margin-top: 120px;
+}
+div.img3 > div.red {
+  width: 300px;
+  height: 100px;
+  background-color: #ed1c24;
+  position: absolute;
+  bottom: 0;
+  right: 504px;
+  z-index: 3;
+  padding: 10px;
+}
+div.img3 > div.divider3 {
+  width: 100%;
+  height: 20px;
+  background-color: #e9d69f;
+  position: absolute;
+  bottom: 0;
+}
+
+div.img3 > div.red h1,
+h3 {
+  color: #fff;
+}
+
+div.img3 > div.red h1 {
+  font-weight: 500;
+}
+
+div.img3 > div.red h3 {
+  font-weight: 300;
+}
+
+div.seventh-part {
+  width: 41%;
+  margin: 0 auto;
+}
+
+div.seventh-part > h3 {
+  color: #ed1c24;
+  margin-top: 32px;
+}
+
+div.seventh-part > p {
+  text-align: justify;
+  margin-top: 20px;
+  color: #818588;
+  line-height: 32px;
+}
+div.seventh-part > div.buttons > div.button > a {
+  text-decoration: none;
+  background-color: white;
+  color: #7c7d7e;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid #c8c8c8;
+  transition: all 200ms linear;
+}
+div.seventh-part > div.buttons > div.button > a:hover {
+  background-color: #ed1c24;
+  color: #fff;
+}
+div.img4 {
+  background: url(../media/recipe-baner-1.png) center center no-repeat fixed;
+  width: 100%;
+  background-size: cover;
+  height: 250px;
+  position: relative;
+  margin-top: 120px;
+  z-index: 1;
+}
+
+div.golestan-kitchen {
+  width: 60%;
+  height: 82px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+div.golestan-kitchen > h3 {
+  color: #ed1c24;
+}
+
+div.golestan-kitchen > p {
+  color: #898989;
+}
+
+div.blogs {
+  width: 100%;
+  height: 716px;
+  background-color: #cde4b0;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  justify-content: center;
+}
+
+div.blogs > div.post1 {
+  width: 320px;
+  height: 564px;
+  background-color: #fff;
+  box-shadow: -3px 3px 7px #00000037;
+}
+div.blogs h2 {
+  color: #ff0000;
+  padding: 8px 24px;
+  font-weight: 400;
+}
+div.blogs p {
+  color: #898989;
+  text-align: justify;
+  padding: 8px 24px;
+}
+
+div.blogs > div.post1 > div.button > a {
+  text-decoration: none;
+  background-color: white;
+  color: #7c7d7e;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid #c8c8c8;
+  transition: all 200ms linear;
+  margin-right: 24px;
+}
+div.blogs > div.post1 > div.button > a:hover {
+  background-color: #ed1c24;
+  color: #fff;
+}
+div.videos {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+div.videos > div.box {
+  width: 320px;
+  height: 500px;
+  box-shadow: -3px 3px 7px #00000037;
+  padding: 0 0 96px 0;
+}
+
+div.videos > div.box > video {
+  width: inherit;
+  height: 180px;
+}
+
+div.videos h2 {
+  color: #ff0000;
+  padding: 8px 24px;
+  font-weight: 400;
+}
+div.videos p {
+  color: #898989;
+  text-align: justify;
+  padding: 8px 24px;
+}
+div.videos > div.box > div.button > a {
+  text-decoration: none;
+  background-color: white;
+  color: #7c7d7e;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid #c8c8c8;
+  transition: all 200ms linear;
+  margin-right: 24px;
+}
+div.videos > div.box > div.button > a:hover {
+  background-color: #ed1c24;
+  color: #fff;
+}
+div.responsibility {
+  width: 100%;
+  height: 1000px;
+}
+div.social-responsibility {
+  width: 100%;
+  height: 620px;
+  background-color: #105153;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+div.social-responsibility > div.line {
+  width: 100%;
+  height: 1px;
+  background-color: #07787c;
+  margin: 8px 0;
+  display: block;
+  position: absolute;
+  bottom: 330px;
+}
+
+div.social-responsibility > span.text1 {
+  color: #d5ece1;
+  font-size: 18px;
+  padding: 340px 0 0;
+}
+
+div.social-responsibility > span.text2 {
+  color: #009da2;
+  font-size: 30px;
+  margin-top: 24px;
+}
+
+div.social-responsibility > span.text2 > span {
+  color: #00d8df;
+  font-size: 20px;
+}
+
+p.mahdi-hospital {
+  color: #bcbec0;
+}
+
+div.mahdi-hospital {
+  width: 395px;
+  height: 344px;
+  background-image: url(../media/csr-pic1.jpg);
+}
+
+div.social-responsibility > div.divider3 {
+  width: 100%;
+  height: 20px;
+  background-color: #e9d69f;
+  position: absolute;
+  bottom: 0;
+}
+
+div.social-responsibility > img {
+  z-index: 0;
+  margin-top: 12px;
+}
+
+div.responsibility > div.explain {
+  width: inherit;
+  height: 482px;
+  background-color: white;
+}
+
+div.responsibility > div.explain > div.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #bababa;
+  margin-top: 30px;
+}
+
+div.responsibility > div.explain > div.text {
+  margin: 150px auto;
+  width: 41%;
+}
+
+div.responsibility > div.explain > div.text > h3 {
+  color: #ed1c24;
+}
+
+div.responsibility > div.explain > div.text > p {
+  text-align: justify;
+  margin-top: 20px;
+  color: #818588;
+}
+
+div.responsibility > div.explain > div.text > p > span {
+  color: #ed1c24;
+}
+
+div.responsibility > div.explain > div.text > div.button > a {
+  text-decoration: none;
+  background-color: white;
+  color: #7c7d7e;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: 1px solid #c8c8c8;
+  transition: all 200ms linear;
+}
+
+div.responsibility > div.explain > div.text > div.button > a:hover {
+  background-color: #ed1c24;
+  color: #fff;
+}
+
+div.social-media {
+  width: inherit;
+  height: 100px;
+}
+
+div.social-media > div.mainlogo {
+  width: inherit;
+  height: inherit;
+  background-color: #eeefef;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  position: relative;
+}
+
+div.social-media > div.mainlogo img {
+  height: 55px;
+  margin-top: 24px;
+}
+
+div.social-media > div.mainlogo > div.facebook {
+  height: 58px;
+  width: 98px;
+  margin-top: 24px;
+  background: url(../media/Facebook.svg) no-repeat;
+  transition: all 300ms linear;
+}
+div.social-media > div.mainlogo > div.facebook:hover {
+  background: url(../media/Facebook-Hover.svg) no-repeat;
+}
+
+div.social-media > div.mainlogo > div.linkedin {
+  height: 58px;
+  width: 98px;
+  margin-top: 24px;
+  background: url(../media/Linkedin.svg) no-repeat;
+  transition: all 300ms linear;
+}
+div.social-media > div.mainlogo > div.linkedin:hover {
+  background: url(../media/Linkedin-Hover.svg) no-repeat;
+}
+
+div.social-media > div.mainlogo > div.instagram {
+  height: 58px;
+  width: 98px;
+  margin-top: 24px;
+  background: url(../media/Instagram.svg) no-repeat;
+  transition: all 300ms linear;
+}
+div.social-media > div.mainlogo > div.instagram:hover {
+  background: url(../media/Instagram-Hover.svg) no-repeat;
+}
+
+div.social-media > div.mainlogo > div.telegram {
+  height: 58px;
+  width: 98px;
+  margin-top: 24px;
+  background: url(../media/Telegram.svg) no-repeat;
+  transition: all 300ms linear;
+}
+div.social-media > div.mainlogo > div.telegram:hover {
+  background: url(../media/Telegram-Hover.svg) no-repeat;
+}
+
+div.social-media > div.mainlogo > div.youtube {
+  height: 58px;
+  width: 98px;
+  margin-top: 24px;
+  background: url(../media/Youtube.svg) no-repeat;
+  transition: all 300ms linear;
+}
+div.social-media > div.mainlogo > div.youtube:hover {
+  background: url(../media/Youtube-Hover.svg) no-repeat;
+}
+
+div.social-media > div.mainlogo > div.blog {
+  height: 58px;
+  width: 98px;
+  margin-top: 24px;
+  background: url(../media/Blog.svg) no-repeat;
+  transition: all 300ms linear;
+}
+div.social-media > div.mainlogo > div.blog:hover {
+  background: url(../media/Blog-Hover.svg) no-repeat;
+}
+
+div.redline {
+  width: 100%;
+  height: 25px;
+  background-color: #ed1c24;
+}
+
+div.footer {
+  width: inherit;
+  height: 500px;
+  background: url(../media/footer\ bg.svg) no-repeat center center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+div.footer > div.menus > div {
+  width: 175px;
+  padding: 50px 0;
+}
+
+div.footer > div.menus {
+  display: flex;
+  gap: 32px;
+  width: 41%;
+  margin: 0 auto;
+}
+
+div.footer > div.menus div.title {
+  color: #fff;
+  border-top: 1px solid #bcbec0;
+  border-bottom: 1px solid #bcbec0;
+  padding: 6px 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+div.footer > div.menus img {
+  margin: 0 auto;
+}
+
+div.footer > div.menus a {
+  color: #bcbec0;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 200ms linear;
+}
+
+div.footer > div.menus a:hover {
+  color: #fff;
+}
+
+div.footer > div.menus ul {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: start;
+}
+
+div.footer > div.menus li {
+  list-style: none;
+}
+
+div.copyright {
+  display: flex;
+  flex-direction: column;
+}
+
+div.copyright > span {
+  color: #58595b;
+}
